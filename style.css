@@ -1,0 +1,21 @@
+:root{--meer:#0f4c5c;--kachel:#e8f1f2;--sonne:#f2a541;--text:#1d2a2f;--papier:#fbfbf8}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,"Times New Roman",serif;line-height:1.7;color:var(--text);background:var(--papier)}
+a:focus-visible{outline:3px solid var(--sonne);outline-offset:2px}
+header{background:var(--meer);color:#fff;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+header strong{font-size:1.2rem}
+nav{display:flex;flex-wrap:wrap;gap:6px 18px;font-family:Arial,sans-serif}
+nav a{color:#fff;text-decoration:none;padding-bottom:2px}
+nav a:hover{text-decoration:underline}
+nav a[aria-current="page"]{border-bottom:2px solid var(--sonne)}
+.hero{background:linear-gradient(135deg,#0f4c5c,#2a7f8e);color:#fff;text-align:center;padding:80px 20px}
+.hero h1{font-size:clamp(2.2rem,7vw,3.8rem);line-height:1.1}
+.hero p{max-width:560px;margin:16px auto 0;font-size:1.15rem}
+section{max-width:900px;margin:0 auto;padding:48px 20px}
+section.infos{background:var(--kachel);max-width:none;padding-left:max(20px,calc((100% - 860px)/2));padding-right:max(20px,calc((100% - 860px)/2))}
+h2{font-size:1.7rem;margin-bottom:16px;color:var(--meer)}
+.karten{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.karte{display:block;background:var(--kachel);padding:22px;border-left:5px solid var(--sonne);color:inherit;text-decoration:none}
+a.karte:hover{background:#d5e6e8}
+.karte h3{margin-bottom:6px;color:var(--meer)}
+footer{background:var(--meer);color:#fff;text-align:center;padding:24px 20px;font-family:Arial,sans-serif;font-size:.9rem}
